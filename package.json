@@ -7,10 +7,17 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@js-temporal/polyfill": "^0.4.4",
     "@slidev/cli": "^0.42.5",
     "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "date-fns": "^2.30.0",
+    "dayjs": "^1.11.9",
+    "luxon": "^3.3.0",
     "slidev-theme-dracula": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.3.0"
   }
 }

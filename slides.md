@@ -31,7 +31,7 @@ src: ./pages/purpose.md
 ---
 
 ---
-src: ./pages/motivation/index.md
+src: ./pages/motivation/common-problems.md
 ---
 
 

@@ -5,3 +5,5 @@ The main goals of this talk are:
 - Show the common real-world Date/Time problems
 - Introduce the Temporal Proposal of TC39
 - Compare Temporal with other Date/Time libraries
+
+<DateLibrary />

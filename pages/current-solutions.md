@@ -1,6 +1,16 @@
 # Current Solutions
 
-With the mentioned Date's problems, we can come up with these popular solutions:
+With the mentioned Date's problems, let's try using dayjs to solve them
+
+<div class="flex justify-center">
+  <img src="https://media.tenor.com/E6oiUf7S48AAAAAi/pepega-write.gif"/>
+</div>
+---
+level: 3
+hideInToc: true
+---
+
+Comparing the solutions:
 
 |  Solution   |   Pros  | Cons |
 | --- | --- | --- |
