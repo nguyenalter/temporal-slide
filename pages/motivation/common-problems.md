@@ -4,7 +4,7 @@ When working with Date/Time in Javascript, we prefer not to use built-in Date ob
 - Inconsistent parser
 - Lack of utility methods
 - Lack of support for time zone
-- Mutable APIs
+<!-- - Mutable APIs -->
 
 ---
 src: ./inconsistent-parser.md

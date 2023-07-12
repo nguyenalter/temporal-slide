@@ -1,6 +1,6 @@
 ---
 theme: default
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: /zilean.webp
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -50,4 +50,8 @@ src: ./pages/comparison/index.md
 
 ---
 src: ./pages/conclusion.md
+---
+
+---
+src: ./pages/question-answer.md
 ---
