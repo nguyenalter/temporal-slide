@@ -9,6 +9,7 @@ import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
 import * as luxon from 'luxon';
 import * as dateFNS from 'date-fns';
+import * as dateFNSTimezone from 'date-fns-tz';
 
 Date.prototype['toTemporalInstant'] = toTemporalInstant;
 window['Temporal'] = Temporal;
@@ -24,6 +25,7 @@ window['dayjs'] = dayjs;
 window['luxon'] = luxon;
 
 window['dateFNS'] = dateFNS;
+window['dateFNSTimezone'] = dateFNSTimezone;
 
 
 console.log('Inited Temporal, day.js, Luxon and date-fns');
