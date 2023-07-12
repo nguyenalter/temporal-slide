@@ -3,7 +3,7 @@
 With the mentioned Date's problems, let's try using dayjs to solve them
 
 <div class="flex justify-center">
-  <img src="https://media.tenor.com/E6oiUf7S48AAAAAi/pepega-write.gif"/>
+  <img src="/pepega-write.gif"/>
 </div>
 ---
 level: 3
