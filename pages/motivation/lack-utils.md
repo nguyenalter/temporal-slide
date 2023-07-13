@@ -4,6 +4,7 @@ hideInToc: true
 ---
 
 # Lack of utility methods
+Utility methods: methods that support format, parse, duration, time before, time after, arithmetic, etc.
 
 Date object provide a limited APIs to get, set, convert and format the Date instance. For example:
 - `getDate()`

@@ -11,10 +11,6 @@ src: ./definition.md
 ---
 
 ---
-src: ./object-relationship.md
----
-
----
 src: ./string-representation.md
 ---
 

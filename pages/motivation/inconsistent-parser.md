@@ -68,7 +68,7 @@ level: 3
 hideInToc: true
 ---
 
-Example 4: Parse an date, comma separated `'2023,1,1'`
+Example 4: Parse a date, comma separated `'2023,1,1'`
 
 <div class="flex justify-between gap-x-3">
   <div>
