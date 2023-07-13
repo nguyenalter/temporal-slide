@@ -23,8 +23,6 @@ hideInToc: true
 
 ```js
 const currentDate = '2023-07-07T19:00:00.000+07:00';
-// utc: '2023-07-07T12:00:00.000Z'
-// expected: '2023-07-07T8:00:00.000-04:00'
 const date = new Date(currentDate);
 
 // use Intl API
@@ -51,8 +49,7 @@ hideInToc: true
 # day.js
 
 ```js
-dayjs.extend(utc);
-dayjs.extend(timezone);
+const currentDate = '2023-07-07T19:00:00.000+07:00';
 
 dayjs(currentDate).tz('America/New_York').format();
 // 2023-07-07T08:00:00-04:00
@@ -66,7 +63,9 @@ hideInToc: true
 # Luxon
 
 ```js
+const currentDate = '2023-07-07T19:00:00.000+07:00';
 const dt = luxon.DateTime.fromISO(currentDate);
+
 dt.setZone('America/New_York').toISO();
 // 2023-07-07T08:00:00.000-04:00
 ```
@@ -79,8 +78,12 @@ hideInToc: true
 # date-fns
 
 ```js
-import { utcToZonedTime } from 'date-fns-tz';
-formatInTimeZone(date, 'America/New_York', 'yyyy-MM-dd HH:mm:ssXXX')
+import { formatInTimeZone } from 'date-fns-tz';
+
+const currentDate = '2023-07-07T19:00:00.000+07:00';
+const date = new Date(currentDate);
+
+formatInTimeZone(date, 'America/New_York', "yyyy-MM-dd'T'HH:mm:ssXXX");
 // 2023-07-07 08:00:00-04:00
 ```
 
@@ -92,6 +95,7 @@ hideInToc: true
 # Temporal
 
 ```js
+const currentDate = '2023-07-07T19:00:00.000+07:00';
 const instant = Temporal.Instant.from(currentDate);
 const zdt = instant.toZonedDateTimeISO('America/New_York');
 zdt.toString();

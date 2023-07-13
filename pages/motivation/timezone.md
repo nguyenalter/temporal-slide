@@ -8,55 +8,57 @@ hideInToc: true
 Date object lacks of timezone related APIs
 <v-click>
 
-Problem 1: Now is 2023/07/14 at 15:00 in Ho Chi Minh city. What time is it in New York?
-
+Use case: We want to implement a timezone dropdown for users to change their timezone setting
+<div class="flex justify-center">
+  <img src="/slack-tz.png" class="h-60"/>
+</div>
 </v-click>
 
 <v-click>
 
-Solution:
-- Date does not provide a built-in method to convert or display a different timezone rather than local time and UTC time
-- However, Date has a `toLocaleString` method to take advantage of the Intl API.
+Problem 1: How to get a list of available timezones?
 </v-click>
 
 <v-click>
 
-```js
-const now = new Date('2023-07-14T15:00'); // local time
-now.toLocaleString('en-GB', { timeZone: 'America/New_York' });
-// 14/07/2023, 04:00:00
-```
+We can not solve this problem using Date built-in methods
 </v-click>
+
+<v-click>
+
+Solution: `const timezoneList = Intl.supportedValuesOf('timeZone');`
+</v-click>
+
 
 ---
 level: 3
 hideInToc: true
 ---
 
-Problem 2: We want to convert a local date to a date with UTC offset equals to +02:00
+Problem 2: How to get the UTC offset of each timezone in the list?
+
+Example: Get UTC offset of `America/New_York` at the moment
+
+<v-click>
+
+We can not solve this problem using Date built-in methods
+</v-click>
 
 <v-click>
 
 Solution:
-- We can apply the same approach as above if only we have the `timeZone` string
-- Let's choose Europe/Berlin because it's using UTC +02:00 offset
 
 ```js
-const date = new Date('2023-07-14T15:00'); // UTC +07:00
-date.toLocaleString('en-GB', { timeZone: 'Europe/Berlin' }); // UTC +02:00
-// 14/07/2023, 10:00:00
+const getUTCOffset = (timeZone) => {
+  const formattedParts = Intl.DateTimeFormat('fr', {
+    timeZoneName: 'short',
+    timeZone,
+  }).formatToParts();
+  const utcOffset = formattedParts.find((part) => part.type === 'timeZoneName');
+  return utcOffset.value;
+};
+
+getUTCOffset(`America/New_York`);
 ```
 </v-click>
 
-<v-click>
-
-The solution above looks good, let's input another date
-</v-click>
-
-<v-click>
-
-```js
-const date = new Date('2023-11-14T15:00'); // UTC +07:00
-date.toLocaleString('en-GB', { timeZone: 'Europe/Berlin' });
-```
-</v-click>
