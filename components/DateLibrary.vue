@@ -49,5 +49,7 @@ console.log('Inited Temporal, day.js, Luxon and date-fns');
 .slidev-page-3 h1+p, .slidev-page-4 h1+p {
   margin-top: 40px !important;
 }
-
+tr > td:nth-child(1), tr > th:nth-child(1) {
+  background-color: #647B5A;
+}
 </style>

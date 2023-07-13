@@ -14,27 +14,36 @@ Date object provide a limited APIs to get, set, convert and format the Date inst
 - `UTC()`
 - `toISOString()`
 
-<v-click>
+---
+level: 3
+hideInToc: true
+---
 
 Use case 1: A task must be done in 2 weeks from now. When is the deadline date?
-</v-click>
 
 <v-click>
 
 Solution:
 ```js
-const now = new Date(); // 2023-07-12T09:50:04.755Z
+const now = new Date();                                     // 2023-07-12T09:50:04.755Z
 const deadline = new Date(now.setDate(now.getDate() + 14));
-console.log(now.toISOString()); // 2023-07-26T09:50:04.755Z
-console.log(deadline.toISOString()); // 2023-07-26T09:50:04.755Z
+console.log(now.toISOString());                             // 2023-07-26T09:50:04.755Z
+console.log(deadline.toISOString());                        // 2023-07-26T09:50:04.755Z
 ```
 </v-click>
+
+<v-click>
+
+Question: What if today is `2023-07-20`, can we use the same solution as above?
+</v-click>
+
 ---
 level: 3
 hideInToc: true
 ---
 
 Use case 2: The next Tet (Lunar New Year) is February 10, 2024. How many days until the next Tet?
+
 <v-click>
 
 Solution:
@@ -44,16 +53,17 @@ const tet = new Date('2024-02-10T00:00+07:00');
 const milisecondsInADay = 1000 * 60 * 60 * 24;
 const days = (tet - now) / milisecondsInADay;
 ```
-
 </v-click>
 
-<v-click>
+---
+level: 3
+hideInToc: true
+---
 
 Use case 3: We need to show the version history date in this format
 <div class="flex justify-center">
   <img src="/dbdiagram-version-history.png" class="h-20"/>
 </div>
-</v-click>
 
 <v-click>
 
