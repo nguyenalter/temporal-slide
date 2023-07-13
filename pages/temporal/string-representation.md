@@ -1,5 +1,6 @@
 ---
 level: 2
+hideInToc: true
 ---
 # String representation
 

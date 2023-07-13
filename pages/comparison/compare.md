@@ -2,7 +2,6 @@
 level: 2
 hideInToc: true
 ---
-# Comparison
 |  Solution   |   Pros  | Cons |
 | --- | --- | --- |
 | Write custom util methods | - Easy to customize for our own use cases | - Need to spend time on development and maintenance <br> - Error Prone |

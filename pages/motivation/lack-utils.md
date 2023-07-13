@@ -16,7 +16,7 @@ Date object provide a limited APIs to get, set, convert and format the Date inst
 
 <v-click>
 
-Problem 1: A task must be done in 2 weeks from now. When is the deadline date?
+Use case 1: A task must be done in 2 weeks from now. When is the deadline date?
 </v-click>
 
 <v-click>
@@ -34,7 +34,7 @@ level: 3
 hideInToc: true
 ---
 
-Problem 2: The next Tet (Lunar New Year) is February 10, 2024. How many days until the next Tet?
+Use case 2: The next Tet (Lunar New Year) is February 10, 2024. How many days until the next Tet?
 <v-click>
 
 Solution:
@@ -49,7 +49,7 @@ const days = (tet - now) / milisecondsInADay;
 
 <v-click>
 
-Problem 3: We need to show the version history date in this format
+Use case 3: We need to show the version history date in this format
 <div class="flex justify-center">
   <img src="/dbdiagram-version-history.png" class="h-20"/>
 </div>

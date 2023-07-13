@@ -35,3 +35,19 @@ console.log('Inited Temporal, day.js, Luxon and date-fns');
   <div class="hidden">
   </div>
 </template>
+
+
+<style>
+.slidev-layout h1+p {
+  opacity: 1 !important;
+}
+
+.slidev-page-2, .slidev-page-3, .slidev-page-4 {
+  font-size: 28px !important;
+  line-height: normal !important;
+}
+.slidev-page-3 h1+p, .slidev-page-4 h1+p {
+  margin-top: 40px !important;
+}
+
+</style>

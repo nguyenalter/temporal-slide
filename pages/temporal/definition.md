@@ -1,5 +1,6 @@
 ---
 level: 2
+hideInToc: true
 ---
 # What is Temporal?
 
